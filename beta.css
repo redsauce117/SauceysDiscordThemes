@@ -1,5 +1,5 @@
 /* SauceysDarkTheme - Please do not change anything
-        and distrubute it as your own theme! */
+        and distrubute it as your own theme!       */
 
 /* TitleBar */
 .typeWindows-15E0Ys {
@@ -1092,6 +1092,7 @@ transition: background-color .3s ease-in-out;
 .theme-dark .cardPrimaryEditable-2IQ7-V {
     background: rgba(25, 25, 25, 0.6);
     border-color: #202225;
+    border-radius: 0;
 }
 .theme-dark .input-2YozMi:hover {
     border-color: #040405;
@@ -1134,6 +1135,21 @@ transition: background-color .3s ease-in-out;
 .theme-dark .user-settings-voice .preview-overlay {
     background-color: #202020;
     border-color: #000;
+}
+
+/* Esc button */
+
+.theme-dark .ui-standard-sidebar-view .btn-close {
+    border-color: #5a5a5a;
+    border-radius: 0;
+    transition: background-color .2s ease-in-out;
+}
+.theme-dark .ui-standard-sidebar-view .btn-close:hover {
+    background-color: hsla(0, 0%, 0%, 0.3);
+    transition: background-color .2s ease-in-out;
+}
+.theme-dark .ui-standard-sidebar-view .esc-text {
+    color: #5a5a5a;
 }
 
 /* modal theming */
@@ -1281,6 +1297,9 @@ g[Attributes Style] {
 }
 .themeClear-1NqU69.valueChecked-3Bzkbm {
     box-shadow: 3px 3px 1px rgba(0,0,0,.4);
+}
+.themeDefault-3M0dJU.sizeDefault-rZbSBU {
+    border-radius: 0;
 }
 .valueChecked-3Bzkbm.sizeDefault-rZbSBU:after {
     border-radius: 0;
@@ -1452,7 +1471,7 @@ g[Attributes Style] {
     background: #101010 !important;
 }
 .upload-modal .bf-toolbar {
-    background: #161616;
+    background: #161616 !important;
 }
 
 /* Toasts */
