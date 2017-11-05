@@ -236,6 +236,14 @@ a[href="/channels/@me"] .badge {
 .contentHoveredText-2HYGIY, .contentHoveredVoice-3qGNKh:active, .contentSelectedVoice-gTtYM9:active {
     background-color: rgba(51,51,51,.6);
 }
+.wrapper-2ldvyE {
+    background-color: #0e0e0e;
+    border-radius: 0;
+    color: #6d6d6d;
+}
+.nameDefaultText-QoumjC, .nameDefaultVoice-1swZoh, .nameLockedText-2fGz07, .nameLockedVoice-wNOMNa {
+    color: #555556;
+}
 
 /* User list Colors */
 
@@ -349,6 +357,14 @@ a[href="/channels/@me"] .badge {
 }
 .theme-dark .tiles-3jKTg9 {
     background-color: #171717;
+}
+.dark-elevation-high, .theme-dark .elevation-high {
+    border-radius: 0px;
+}
+.theme-dark .incoming-call-inner {
+    background: #2b2b2b;
+    border: none;
+    border-radius: 0px;
 }
 
 /* Profiles */
@@ -610,6 +626,9 @@ a[href="/channels/@me"] .badge {
 .protip.inline {
     padding-top: 10px;
 }
+.avatarHintInner-1JYcVr {
+    color: #fff;
+}
 
 /* Quick Switcher */
 
@@ -857,6 +876,14 @@ a[href="/channels/@me"] .badge {
     border: none;
 }
 
+/* Chat pictures */
+
+.message-group .comment .attachment-image a {
+    border-radius: 0;
+    margin: 5px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0,1);
+}
+
 /* Chat color */
 
 .theme-dark .friends-table, .theme-dark .messages-wrapper {
@@ -993,9 +1020,37 @@ a[href="/channels/@me"] .badge {
 
 .theme-dark .chat .jump-to-present-bar {
     background-color: rgba(33,33,33,.9);
+    transition: background-color .3s ease-in-out;
+    border-radius: 0;
 }
 .theme-dark .chat .jump-to-present-bar:hover {
     background-color: rgba(39,39,39,.9);
+    transition: background-color .3s ease-in-out;
+}
+
+/* New Messages */
+.chat .new-messages-bar {
+    background-color: rgba(33,33,33,.9);
+    transition: background-color .3s ease-in-out;
+    border-radius: 0;
+}
+.chat .new-messages-bar:hover {
+    background-color: rgba(39,39,39,.9);
+    transition: background-color .3s ease-in-out;
+}
+.chat .new-messages-bar button:last-child {
+    color: #fff;
+}
+
+/* New Unreads */
+
+.unread-2TDDFN {
+    background-color: rgba(33,33,33,.9);
+transition: background-color .3s ease-in-out;
+}
+.unread-2TDDFN:hover {
+    background-color: rgba(39,39,39,.9);
+    transition: background-color .3s ease-in-out;
 }
 
 /* Blocked Message */
@@ -1094,6 +1149,104 @@ a[href="/channels/@me"] .badge {
     box-shadow: inset 0 1px 0 rgba(47,49,54,.6);
 }
 
+/* Upload modal */
+
+.upload-modal {
+    background-color: #2b2b2b;
+    border-radius: 0px;
+}
+.upload-modal .inner {
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    margin: 0;
+}
+.upload-modal .inner .file .icon.image {
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+.upload-modal .footer {
+    background-color: #171717;
+    border-radius: 0;
+}
+.upload-modal .footer .button {
+    margin-right: 10px;
+}
+
+/* Help Modal */
+
+.need-help-modal.deprecated .header {
+    background-color: #252525;
+    border-radius: 0;
+    box-shadow: 0 10px 10px rgba(0,0,0,.5);
+}
+.need-help-modal.deprecated .header input[type=text] {
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+    background-color: #171717;
+    border-radius: 0;
+    color: #fff;
+}
+.form.deprecated .control-group input[type=email], .form.deprecated .control-group input[type=number], .form.deprecated .control-group input[type=password], .form.deprecated .control-group input[type=text], .form.deprecated .control-group textarea {
+    border: none;
+}
+.form.deprecated .control-group input[type=email], .form.deprecated .control-group input[type=number], .form.deprecated .control-group input[type=password], .form.deprecated .control-group input[type=text], .form.deprecated .control-group textarea:focus {
+    border: none;
+}
+.form.deprecated .form-inner {
+    background-color: #171717;
+}
+.need-help-modal.deprecated a {
+    color: #929292;
+}
+.need-help-modal.deprecated a:hover {
+    color: #cecece;
+}
+.need-help-modal.deprecated .footer {
+    background-color: #252525;
+    border-radius: 0;
+    border-top: none;
+    color: #eaeaea;
+    box-shadow: 0 -10px 10px rgba(0,0,0,.5);
+}
+
+/* KeyBoard combos Modal */
+
+.keyboard-shortcuts-modal {
+    background-color: #2b2b2b;
+    border-radius: 0px;
+}
+.keyboard-shortcuts-modal .modal-title {
+    color: #fff;
+}
+.keyboard-shortcuts-modal .modal-subtitle {
+    border-bottom: 0;
+    color: #cecece;
+}
+.keybind-shortcut.dim span {
+    background-color: #585858;
+    color: #fff;
+}
+.keybind-shortcut span {
+    border: none;
+    border-radius: 0;
+    background-color: #585858;
+}
+.keybind-shortcut span {
+    border: none;
+    border-radius: 0px;
+    box-shadow: inset 0 -4px 0 #3e3e3e;
+}
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group .keybind-description {
+    color: #b9b9b9;
+}
+.keybind-shortcut {
+    color: #969696;
+}
+g[Attributes Style] {
+    fill: rgb(0, 0, 0);
+}
+
 /* Buttons */
 
 .buttonBrandFilled-3Mv0Ra {
@@ -1103,6 +1256,48 @@ a[href="/channels/@me"] .badge {
 .buttonBrandFilled-3Mv0Ra:hover {
     background-color: #595959;
     color: #fff;
+}
+.upload-modal .footer .button-primary {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Switches */
+
+.horizontal-2BEEBe>.flex-lFgbSz:last-child, .horizontal-2BEEBe>.flexChild-1KGW5q:last-child {
+    border-radius: 0;
+}
+.themeDefault-3M0dJU {
+    background-color: #404040;
+}
+.themeDefault-3M0dJU.sizeDefault-rZbSBU {
+    box-shadow: 3px 3px 1px rgba(0,0,0,.4);
+}
+.themeDefault-3M0dJU.sizeDefault-rZbSBU:after {
+    border-radius: 0;
+}
+.themeDefault-3M0dJU.valueChecked-3Bzkbm {
+    box-shadow: 3px 3px 1px rgba(0,0,0,.4);
+}
+.themeClear-1NqU69.valueChecked-3Bzkbm {
+    box-shadow: 3px 3px 1px rgba(0,0,0,.4);
+}
+.valueChecked-3Bzkbm.sizeDefault-rZbSBU:after {
+    border-radius: 0;
+}
+.themeClear-1NqU69.valueUnchecked-XR6AOk.sizeDefault-rZbSBU {
+    box-shadow: 3px 3px 1px rgba(0,0,0,.4);
+    background-color: #404040;
+}
+.themeClear-1NqU69.valueUnchecked-XR6AOk.sizeDefault-rZbSBU {
+    box-shadow: 3px 3px 1px rgba(0,0,0,.4);
+    background-color: #404040;
+}
+.sizeDefault-rZbSBU:after {
+    border-radius: 0px;
+    height: 18px;
+    margin: 3px;
+    width: 18px;
 }
 
 /* Dropdowns */
@@ -1232,6 +1427,33 @@ a[href="/channels/@me"] .badge {
     border-radius: 0px;
     color: #b9b9b9;
 }
+.citar-btn {
+    color: #fff !important;
+    padding: 3px 5px;
+    background: rgb(51, 51, 51);
+    border-radius: 0px;
+}
+#permissions-modal-wrapper #permissions-modal {
+    border-radius: 0px;
+}
+#permissions-modal-wrapper .header {
+    background-color: #252525;
+}
+#permissions-modal-wrapper .role-side {
+    background: #2b2b2b;
+}
+#permissions-modal-wrapper .perm-side {
+    background-color: #272727;
+}
+#permissions-modal-wrapper .perm-item {
+    box-shadow: none;
+}
+.bf-toolbar:before {
+    background: #101010 !important;
+}
+.upload-modal .bf-toolbar {
+    background: #161616;
+}
 
 /* Toasts */
 .toast {
@@ -1301,7 +1523,7 @@ a[href="/channels/@me"] .badge {
     max-height: 12px;
 }
 
-/* Better Discord Switch Fix Thanks to Zerbos */
+/* Better Discord Switch Fix Thanks to Zerebos */
 
 .ui-switch-wrapper {
     -webkit-user-select: none;
@@ -1331,8 +1553,9 @@ a[href="/channels/@me"] .badge {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #72767d;
-    border-radius: 14px;
+    background: #404040;
+    box-shadow: 3px 3px 1px rgba(0,0,0,.4);
+    border-radius: 0px;
     transition: background .15s ease-in-out,box-shadow .15s ease-in-out,border .15s ease-in-out;
 }
 .ui-switch-checkbox:checked+.ui-switch {
@@ -1348,7 +1571,7 @@ a[href="/channels/@me"] .badge {
     left: 3px;
     bottom: 3px;
     background: #f6f6f7;
-    border-radius: 10px;
+    border-radius: 0px;
     transition: all .15s ease;
     box-shadow: 0 3px 1px 0 rgba(0,0,0,.05),0 2px 2px 0 rgba(0,0,0,.1),0 3px 3px 0 rgba(0,0,0,.05);
 }
