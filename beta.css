@@ -277,6 +277,9 @@ a[href="/channels/@me"] .badge {
 .contentMutedText-Lcl-Wj {
     background-color: rgba(51,51,51,.6);
 }
+.nameMutedText-1YDcP-, .nameMutedVoice-26k4cP {
+    color: #797979;
+}
 .contentUnreadText-3oxASB {
     border: 10px;
     border-color: #fff;
@@ -321,10 +324,11 @@ a[href="/channels/@me"] .badge {
 
 .theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
     background: #474747;
+    transition: background .2s ease-in-out;
 }
 .theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:focus {
     background: #333333;
-    transition: background 0.3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 /* Friend list header */
@@ -362,6 +366,7 @@ a[href="/channels/@me"] .badge {
 .private-channels .channel:hover a {
     background-color: rgba(71,71,71,.6);
     color: #fff;
+    transition: background-color .2s ease-in-out;
 }
 .private-channels .channel.selected a {
     background-color: rgba(51,51,51,.6);
@@ -704,6 +709,19 @@ a[href="/channels/@me"] .badge {
 }
 .avatarHintInner-1JYcVr {
     color: #fff;
+}
+.headerName-2N8Pdz {
+    font-weight: 700;
+    color: #e8e8e8;
+}
+.member-roles .member-role {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 0px;
+    color: #a8a8a8;
+}
+.member-roles .manipulate:hover:not(.invert) {
+    border-color: #000;
 }
 
 /* Quick Switcher */
@@ -1269,6 +1287,12 @@ transition: background-color .3s ease-in-out;
     border-radius: 3px;
     box-shadow: 0 0 10px #000;
 }
+.card-3DrRmC {
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0;
+    position: relative;
+}
 .theme-dark .cardPrimary-ZVL9Jr {
     background: rgba(25, 25, 25, 0.6);
     border-color: #202225;
@@ -1331,6 +1355,9 @@ transition: background-color .3s ease-in-out;
 }
 .theme-dark .description-3MVziF, .theme-dark .labelDescriptor-1BebCl {
     color: #cecece;
+}
+.round-30vw42 {
+    border-radius: 0;
 }
 
 /* Audit Logs */
@@ -1515,6 +1542,7 @@ g[Attributes Style] {
 .buttonBrandFilled-3Mv0Ra {
     background-color: #4c4c4c;
     color: #fff;
+    border-radius: 0;
 }
 .buttonBrandFilled-3Mv0Ra:hover {
     background-color: #595959;
@@ -1526,6 +1554,11 @@ g[Attributes Style] {
 }
 .theme-dark .passthroughSelected-3_g4oB {
     background: #4c4d4e;
+}
+.buttonRedOutlined-2t9fm_ {
+    border-color: rgba(240,71,71,.3);
+    color: #f04747;
+    border-radius: 0;
 }
 
 /* Switches */
@@ -1723,6 +1756,11 @@ g[Attributes Style] {
 .upload-modal .bf-toolbar {
     background: #161616 !important;
 }
+.ui-standard-sidebar-view .bda-slist .bda-right button {
+    background: #7289da;
+    color: #FFF;
+    border-radius: 0px;
+}
 
 /* Toasts */
 .toast {
@@ -1790,6 +1828,11 @@ g[Attributes Style] {
     overflow: hidden;
     display: block;
     max-height: 12px;
+}
+.bd-pfbtn {
+    background: #7289da;
+    color: #FFF;
+    border-radius: 0px;
 }
 
 /* Better Discord Switch Fix Thanks to Zerebos */
