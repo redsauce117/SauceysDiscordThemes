@@ -923,6 +923,47 @@ a[href="/channels/@me"] .badge {
     box-shadow: 0 0 5px rgba(0, 0, 0, 1)
 }
 
+/* Embeds */
+
+.embed-wrapper {
+    margin-top: 5px;
+    max-width: 520px;
+    position: relative;
+    border-radius: 0;
+}
+.theme-dark .message-group .embed {
+    background-color: #1b1b1b;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+.theme-dark .message-group .embed-wrapper .embed-color-pill {
+    z-index: 1;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+/* Invitenotice message */
+
+.theme-dark .invite-button {
+    background-color: #2b2b2b;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+/* Rich Presence */
+
+.theme-dark .elevationLow-5GEz9e {
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-radius: 0;
+    background-color: #2b2b2b;
+}
+.coverImage-2oiOoS {
+    -webkit-mask: linear-gradient(90deg, rgba(0,0,0,.3) 10%,#fff);
+}
+
 /* New Messages message */
 
 .theme-dark .friends-table .messages .divider.divider-red>div, .theme-dark .messages-wrapper .messages .divider.divider-red>div {
