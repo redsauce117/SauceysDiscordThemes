@@ -1830,6 +1830,8 @@ g[Attributes Style] {
 }
 #user-profile-modal .header .additional-actions-icon {
     padding: 0;
+    background-color: #171717;
+    border-radius: 10px;
 }
 .form.deprecated .btn-primary {
     background-color: #7289da;
