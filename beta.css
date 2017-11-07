@@ -5,6 +5,7 @@
 
 :root {
     --avatars: 50%; /* Set to "0" if you want square pfps "50%" for round */
+    --version: "Saucey's Dark Theme v1.0.0";
 }
 		
 /* TitleBar */
@@ -460,6 +461,16 @@ a[href="/channels/@me"] .badge {
 .theme-dark .private-channel-call.minimum .private-channel-call-actions .center {
     background-color: #18191c;
     border-color: #18191c;
+}
+.ui-call-avatar.voice {
+    border-radius: var(--avatars);
+}
+.ui-call-avatar-border.voice.speaking {
+    border-radius: var(--avatars);
+    box-shadow: inset 0 0 0 3px #43b581;
+}
+.ui-call-avatar-wrapper.voice .ripple {
+    border-radius: var(--avatars);
 }
 .theme-dark .private-channel-call.minimum .private-channel-call-actions .center {
     background-color: #353535;
@@ -1068,6 +1079,9 @@ a[href="/channels/@me"] .badge {
 }
 .theme-dark .partyBottomBorder-3UKgJE {
     background-color: #3c3f42;
+}
+.iconActiveMedium-1Vv738 {
+    border-radius: var(--avatars);
 }
 
 /* DMs Direct Messages text */
@@ -2126,6 +2140,9 @@ g[Attributes Style] {
     width: 100%;
     z-index: 10;
 }
+#dv-settings-panel {
+    background: #1f1f1f !important;
+}
 .member-perms .member-perm {
     background-color: #353535;
     border: 1px solid #000000;
@@ -2184,7 +2201,7 @@ g[Attributes Style] {
     color: #fff;
 }
 
-/* Better Discord Custom CSS Menu */
+/* Better Discord */
 
 .bd-detached-editor #bd-customcss-detach-container {
     display: block;
@@ -2219,7 +2236,7 @@ g[Attributes Style] {
     display:block;
     padding-top:5px;
     margin-bottom:-10px;
-    content: "Saucey's Dark Theme v1.0";
+    content: var(--version);
     color: #8247c1;
 }
 .ui-standard-sidebar-view .bda-slist li:nth-child(odd) {
