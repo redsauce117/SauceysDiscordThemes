@@ -1,3 +1,9 @@
-# SauceysDiscordThemes
+# SauceysDarkTheme by Saucey
+## [Download](https://rawgit.com/redsauce117/SauceysDiscordThemes/master/SauceysDarkTheme.theme.css)
 
-Here, I post some of the work i've done for my own and other people's themes. Saucey' Dark Theme is my original dark theme that keeps the same discord look, but darkens the client and adds animation to the elements.
+Saucey's Dark Theme is a darker version of discord, keeping the same look, but darker elements and more squareish elements.
+
+### Previews
+![Discord Guilds](https://i.imgur.com/y91wBoV.png)
+![Options](https://i.imgur.com/1XmV2ef.png)
+![Profile menu](https://i.imgur.com/EmgiRpF.gif)
