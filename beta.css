@@ -1649,6 +1649,9 @@ transition: background-color .3s ease-in-out;
 .theme-dark .user-settings-games .not-detected, .theme-light .user-settings-games .not-detected {
     background-color: #1e1e1e;
 }
+.item-3879bf {
+    border-radius: 0;
+}
 
 /* Audit Logs */
 
@@ -2104,6 +2107,13 @@ g[Attributes Style] {
 .tooltip-bottom {animation: tooltip-down 200ms ease;}
 .tooltip-right {animation: tooltip-right 200ms ease;}
 .tooltip::after {display:none;}
+.theme-dark .bubble-17BwqU {
+    background-color: #2d2d2d;
+	box-shadow: 0 2px 4px 1px rgba(0,0,0,.1)!important;
+}
+.bubble-17BwqU:before {
+    display: none;
+}
 
 /*      Context Menu     */
 
@@ -2183,6 +2193,18 @@ g[Attributes Style] {
 }
 #dv-settings-panel {
     background: #1f1f1f !important;
+}
+.dv-panel .dv-title {
+    border-bottom: 1px solid #717171;
+    color: #cecece;
+}
+.dv-panel input[type="radio"] + label span {
+    background: #99aab5;
+    border-radius: 0;
+}
+.dv-panel input[type="radio"] + label span::after {
+    background: #fff;
+    border-radius: 0;
 }
 .member-perms .member-perm {
     background-color: #353535;
@@ -2304,6 +2326,10 @@ g[Attributes Style] {
     background: #7289da;
     color: #FFF;
     border-radius: 0px;
+}
+#bd-settings-sidebar .ui-tab-bar-item {
+    color: #b9bbbe;
+    border-radius: 0;
 }
 
 /* Better Discord Switch Fix Thanks to Zerebos */
