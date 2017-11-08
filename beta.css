@@ -365,6 +365,9 @@ a[href="/channels/@me"] .badge {
     border-radius: 0;
     color: #9c9c9c;
 }
+.avatarDefault-3jtQoc, .avatarSpeaking-3teDH6 {
+    border-radius: var(--avatars);
+}
 
 
 /* User list Colors */
@@ -402,6 +405,13 @@ a[href="/channels/@me"] .badge {
     background-color: rgba(28,28,28, 0.2);
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     transition: 0.3s ease-in-out;
+}
+.theme-dark #friends .tab-bar .tab-bar-item.selected {
+    background-color: #212121;
+    color: #ffffff;
+}
+.theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) {
+    background-color: #444444;
 }
 
 
@@ -1593,6 +1603,7 @@ transition: background-color .3s ease-in-out;
 }
 .theme-dark .ui-hover-card:before {
     background-color: rgba(0,0,0,.3);
+    border-radius: 0;
 }
 .user-settings-voice .media-engine-video {
     border-radius: 0px;
@@ -1615,6 +1626,19 @@ transition: background-color .3s ease-in-out;
 }
 .theme-dark .checkbox-1QwaS4 {
     border-color: #757575;
+}
+.user-settings-connections .connection {
+    border-radius: 0;
+}
+.connection-delete {
+    border: 1px solid hsla(0,0%,100%,.3);
+    border-radius: 0;
+}
+.user-settings-games .not-detected, .user-settings-games .now-playing {
+    border-radius: 0;
+}
+.theme-dark .user-settings-games .not-detected, .theme-light .user-settings-games .not-detected {
+    background-color: #1e1e1e;
 }
 
 /* Audit Logs */
@@ -2018,6 +2042,14 @@ g[Attributes Style] {
     margin: 3px;
     width: 18px;
 }
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {
+    background: #7289da;
+	border-radius: 0;
+}
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before {
+    background: #f6f6f7;
+    border-radius: 0;
+}
 
 /* Dropdowns */
 
@@ -2154,6 +2186,7 @@ g[Attributes Style] {
     padding: 3px 5px;
     background: rgb(51, 51, 51);
     border-radius: 0px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 #permissions-modal-wrapper #permissions-modal {
     border-radius: 0px;
@@ -2185,6 +2218,7 @@ g[Attributes Style] {
     background: #7289da;
     color: #fff!important;
     border-radius: 0;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 .sort-button {
     border-radius: 0!important;
