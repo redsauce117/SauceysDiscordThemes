@@ -5,6 +5,10 @@
 
 :root {
     --avatars: 50%; /* Set to "0" if you want square pfps "50%" for round */
+    --chatspacing: 20px; /* Spacing between messages 20px for default, 10px for closer) */
+    --chatbackground: #2b2b2b; /* Color of the main chatroom background */
+    --channellistcolor: #191919; /* Color of the channel list/user list and friends list */
+    --guildlistcolor: #1f1f1f; /* Color of the guild list */
     --version: "Saucey's Dark Theme v1.0.0";
 }
 		
@@ -204,7 +208,7 @@ a[href="/channels/@me"] .badge {
     -ms-flex-negative: 0;
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
-    background-color: #1f1f1f;
+    background-color: var(--guildlistcolor);
     contain: layout;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,7 +224,7 @@ a[href="/channels/@me"] .badge {
 /* Guild Icons */
 
 .guilds-wrapper .guilds .guild .guild-inner {
-    background: #212121;
+    background: var(--guildlistcolor);
     /*border-radius: 25px;*/
     border-radius: var(--avatars)!important;
     cursor: pointer;
@@ -994,7 +998,7 @@ a[href="/channels/@me"] .badge {
 /* Channel lists */
 
 .container-RYiLUQ {
-    background-color: #191919;
+    background-color: var(--channellistcolor);
     contain: layout;
     min-height: 0;
     position: relative;
@@ -1020,7 +1024,7 @@ a[href="/channels/@me"] .badge {
     position: relative;
     transform: translateZ(0);
     user-select: none;
-    background-color: #191919;
+    background-color: var(--channellistcolor);
 }
 .unread-23Kvxk {
     background-color: #bfbfbf;
@@ -1036,13 +1040,13 @@ a[href="/channels/@me"] .badge {
 /* User list color */
 
 .theme-dark .channel-members {
-    background-color: #191919;
+    background-color: var(--channellistcolor);
 }
 
 /* Activity Feed */
 
 .theme-dark .activityFeed-HeiGwL {
-    background-color: #2b2b2b;
+    background-color: var(--chatbackground);
 }
 .theme-dark .body-2WmNzl {
     background-color: rgba(31, 31, 31, 0.3) !important;
@@ -1264,7 +1268,7 @@ a[href="/channels/@me"] .badge {
 /* Chat color */
 
 .theme-dark .friends-table, .theme-dark .messages-wrapper {
-    background-color: #2b2b2b;
+    background-color: var(--chatbackground);
 }
 .message-group .comment {
     background: #212121;
@@ -1283,6 +1287,20 @@ a[href="/channels/@me"] .badge {
     padding: 10px;
     box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
     transition: all .2s ease-in-out;
+}
+.message-group {
+    border-bottom: 1px solid #eceeef;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: var(--chatspacing);
+}
+.theme-dark .message-group.is-local-bot-message {
+    background-image: linear-gradient(90deg,rgba(74, 74, 74, 0.3) 80%,#2b2b2b)!important;
+    border-color: transparent;
+    box-shadow: -20px 0 #33373b, 20px 0 #36393e, -20px -1px 0 0 #3e4146, -20px 1px 0 #3e4146, 20px 1px 0 #3e4146, 20px -1px 0 #3e4146;
+}
+.theme-dark .message-group.is-local-bot-message {
+    background-color: #fff!important;
 }
 /*
 .comment {
@@ -1652,6 +1670,10 @@ transition: background-color .3s ease-in-out;
 .item-3879bf {
     border-radius: 0;
 }
+.user-settings-keybinds .ghost-pill {
+    -webkit-box-flex: 0;
+    background-color: rgba(250,166,26,.1);
+}
 
 /* Audit Logs */
 
@@ -2013,6 +2035,34 @@ g[Attributes Style] {
     background: #7289da;
     border-radius: 0;
 }
+.buttonOutlined-38aLSW {
+    border-radius: 0;
+}
+
+/* Sliders */
+
+.bar-2cFRGz {
+    border-radius: 0;
+    height: 8px;
+    top: 16px;
+}
+.barFill-18ABna {
+    background: #7289da;
+    height: 100%;
+}
+.grabber-1TZCZi {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 3px 1px 0 rgba(0,0,0,.05), 0 2px 2px 0 rgba(0,0,0,.1), 0 3px 3px 0 rgba(0,0,0,.05);
+    cursor: ew-resize;
+    height: 24px;
+    left: 0;
+    margin-left: -5px;
+    margin-top: -13px;
+    top: 50%;
+    width: 10px;
+}
 
 /* Switches */
 
@@ -2253,6 +2303,36 @@ g[Attributes Style] {
 }
 .sort-button {
     border-radius: 0!important;
+}
+#tagID {
+    font-size: 10px;
+    letter-spacing: 0.025rem;
+    position: relative;
+    top: -0.4ex;
+    height: 9px;
+    margin-left: -3px;
+    margin-right: 6px;
+    text-shadow: 0 1px 3px black;
+    background: #798AED;
+    border-radius: 0!important;
+    padding: 3px 5px;
+    color: #FFF;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+.quicksave-icon-btn {
+    position: relative;
+    z-index: 99;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: -40px;
+    margin-left: 0px;
+    padding: 6px;
+    cursor: pointer;
+    transition: opacity .2s;
+    opacity: 0;
+    border-radius: 0!important;
+    background-color: rgba(51, 51, 51, .6);
 }
 
 /* Toasts */
