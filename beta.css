@@ -6,9 +6,10 @@
 :root {
     --avatars: 50%; /* Set to "0" if you want square pfps "50%" for round */
     --chatspacing: 20px; /* Spacing between messages 20px for default, 10px for closer) */
-    --chatbackground: #2b2b2b; /* Color of the main chatroom background */
-    --channellistcolor: #191919; /* Color of the channel list/user list and friends list */
-    --guildlistcolor: #1f1f1f; /* Color of the guild list */
+    --chatbackground: #2b2b2b; /* Color of the main chatroom background #2b2b2b default */
+    --channellistcolor: #191919; /* Color of the channel list/user list and friends list #191919 default */
+    --guildlistcolor: #1f1f1f; /* Color of the guild list #1f1f1f default */
+    --accentcolor: #7289da; /* Changes the secondary color #7289da default discord color #c95738 for a nice orange */
     --version: "Saucey's Dark Theme v1.0.0";
 }
 		
@@ -125,6 +126,12 @@ a[href="/channels/@me"] .badge {
 }
 .popout-menu .popout-menu-item.leave:hover {
 	color: #f04747;
+}
+.popout-menu .popout-menu-item.invite {
+    color: var(--accentcolor);
+}
+.popout-menu .popout-menu-item:hover.invite {
+    color: var(--accentcolor);
 }
 
 /* Small popouts */
@@ -870,8 +877,8 @@ a[href="/channels/@me"] .badge {
     border-radius: 0;
 }
 .botTagInvert-gorWR_ {
-    background: #fff;
-    color: #7289da;
+    background: var(--accentcolor);
+    color: #fff;
 }
 
 /* Quick Switcher */
@@ -1003,6 +1010,12 @@ a[href="/channels/@me"] .badge {
 .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar {
     background: #353535;
     width: 8px!important;
+}
+.search-popout .option .answer {
+    color: #cecece;
+}
+.search-popout .option.user .displayed-nick {
+    color: #fff;
 }
 
 /* Channel lists */
@@ -1619,7 +1632,7 @@ transition: background-color .3s ease-in-out;
     border-color: #040405;
 }
 .theme-dark .input-2YozMi:focus {
-    border-color: #7289da;
+    border-color: var(--accentcolor);
 }
 .theme-dark .avatar-uploader-indicator {
     background-color: #1c1c1c;
@@ -1697,6 +1710,34 @@ transition: background-color .3s ease-in-out;
     background-color: #2b2b2b;
     border-radius: 0;
 }
+.itemDefaultSelected-1UAWLe {
+    background-color: var(--accentcolor);
+    color: #fff;
+}
+.itemBrand-mC9YR4 {
+    color: var(--accentcolor);
+}
+.itemBrandSelected-3LxxzT {
+    background-color: var(--accentcolor);
+    color: #fff;
+}
+.cardPrimaryEditable-2IQ7-V[style*="background-color: rgb(114, 137, 218);"] {
+    background-color: var(--accentcolor)!important;
+}
+
+/* Server overview */
+
+.guild-settings-base-section .avatar-uploader-inner {
+    background-size: 100% 100%;
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: var(--avatars);
+}
+.ui-input-button {
+    border: 1px solid;
+    border-radius: 0;
+}
 
 /* Audit Logs */
 
@@ -1740,6 +1781,24 @@ transition: background-color .3s ease-in-out;
     box-shadow: inset 0 1px 0 rgba(47,49,54,.6);
 }
 
+/* Upload drop modal */
+
+.upload-drop-modal .bgScale{
+    background: var(--accentcolor);
+    border-radius: 0;
+    display: block;
+    position: absolute;
+    box-shadow:0 5px 20px rgba(0,0,0,.4),0 -2px 0px rgba(0,0,0,.1);
+}
+.upload-drop-modal.error {
+    background-color: #f04747;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.4),0 -2px 0px rgba(0,0,0,.1);
+}
+
 /* Upload modal */
 
 .upload-modal {
@@ -1762,8 +1821,111 @@ transition: background-color .3s ease-in-out;
     border-radius: 0;
 }
 .upload-modal .footer .button {
+    background-color: var(--accentcolor);
     margin-right: 10px;
 }
+
+/* Nitro Buy page */
+
+.premium-payment-modal {
+    background-color: #252525;
+    border-radius: 0;
+    color: #fff;
+    flex-shrink: 0;
+    max-height: 460px;
+    min-height: 210px;
+    transition: -webkit-transform 40ms ease-out;
+    transition: transform 40ms ease-out;
+    width: 460px;
+}
+.premium-payment-modal .premium-payment-form .premium-payment-subtitle {
+    color: #cecece;
+}
+.premium-payment-modal .premium-payment-form {
+    border-radius: 0;
+    height: 236px;
+    margin-top: -27px;
+    overflow: hidden;
+    padding-top: 27px;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+.premium-payment-modal .premium-payment-form:before {
+    background-color: var(--accentcolor);
+    border-radius: 0;
+    content: "";
+    display: block;
+    height: 44px;
+    left: 0;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -22px;
+    position: absolute;
+    top: 0;
+    top: 52.5%;
+    visibility: hidden;
+    width: 340px;
+    z-index: 1;
+}
+
+.fancy-credit-input {
+    align-items: stretch;
+/*    background-color: #171717;*/
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    height: 44px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transition: background-color .3s ease-out .3s,-webkit-box-shadow .3s ease-out .3s;
+    transition: box-shadow .3s ease-out .3s,background-color .3s ease-out .3s;
+    width: 340px;
+}
+/*
+.fancy-credit-input .cc-number-wrapper .cc-number-placeholder {
+    color: #fff;
+}
+.fancy-credit-input .expiration-placeholder, .fancy-credit-input input {
+    background: transparent;
+    border: none;
+    color: #fff!important;
+    display: block;
+    font-family: SourceCodePro;
+    font-size: 17px;
+    font-weight: 500;
+    height: 100%;
+    line-height: 46px;
+    margin: 0 0 0 10px;
+    outline: none;
+    padding: 3px 0 0;
+}
+.fancy-credit-input .cc-info-wrapper .expiration-placeholder {
+    color: #cecece!important;
+}
+*/
+.premium-payment-modal .premium-payment-button {
+    background-color: #4c4c4c;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    height: 34px;
+    line-height: 30px;
+    padding: 0 20px;
+    position: relative;
+    box-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
+
 
 /* Delete Message Modal */
 
@@ -1802,7 +1964,7 @@ transition: background-color .3s ease-in-out;
     color: #cecece;
 }
 #instant-invite-modal .copy {
-    background-color: #7289da;
+    background-color: var(--accentcolor);
     font-size: 16px;
     height: 46px;
     line-height: 46px;
@@ -1880,6 +2042,30 @@ transition: background-color .3s ease-in-out;
     color: #cecece;
 }
 
+/* Server region modal */
+
+.region-select-modal {
+    -webkit-box-sizing: border-box;
+    background: #2b2b2b;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 700px;
+}
+.region-select-modal .region-select-modal-header {
+    color: #fff;
+}
+.region-select-modal .region-select-modal-option {
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 0;
+}
+.theme-dark .region-select-name {
+    color: #cecece;
+}
+.region-select-modal .region-select-modal-footer {
+    color: #cecece;
+}
 
 /* Help Modal */
 
@@ -1993,6 +2179,11 @@ g[Attributes Style] {
 
 /* Buttons */
 
+.button {
+    background-color: var(--accentcolor);
+    border-radius: 0;
+    color: #fff;
+}
 .buttonBrandFilled-3Mv0Ra {
     background-color: #4c4c4c;
     color: #fff;
@@ -2028,12 +2219,12 @@ g[Attributes Style] {
     border-radius: 0 !important;
 }
 #user-profile-modal .btn {
-    background-color: #7289da;
+    background-color: var(--accentcolor);
     border-radius: 0;
     box-shadow: 0 2px 1px rgba(0,0,0,.3);
 }
 .form.deprecated .btn-primary {
-    background-color: #7289da;
+    background-color: var(--accentcolor);
     border-radius: 0;
     color: #fff;
 }
@@ -2052,17 +2243,17 @@ g[Attributes Style] {
 }
 .buttonBrandGhost-1-Lmhc {
     background-color: #595959;
-    color: #7289da;
+    color: var(--accentcolor);
 }
 .bot-tag {
-    background: #7289da;
+    background: var(--accentcolor);
     border-radius: 0;
 }
 .buttonOutlined-38aLSW {
     border-radius: 0;
 }
 .channel-textarea-guard button {
-    background-color: #7289da;
+    background-color: var(--accentcolor);
     border-radius: 0;
     color: #fff;
     font-size: 14px;
@@ -2070,6 +2261,14 @@ g[Attributes Style] {
     line-height: 30px;
     padding: 0 23px;
     transition: background-color .2s ease;
+}
+
+/* Checkboxes */
+
+.theme-dark .checked-2TahvT {
+    background-color: #fff;
+    border-color: #fff;
+    border: none;
 }
 
 /* Sliders */
@@ -2080,7 +2279,7 @@ g[Attributes Style] {
     top: 16px;
 }
 .barFill-18ABna {
-    background: #7289da;
+    background: var(--accentcolor);
     height: 100%;
 }
 .grabber-1TZCZi {
@@ -2116,6 +2315,28 @@ g[Attributes Style] {
     width: 24px;
 }
 
+/* Progress bar */
+
+.message-group .comment .attachment .upload>.progress {
+    border-radius: 0;
+    height: 6px;
+    margin-top: 6px;
+    width: 300px;
+}
+.message-group .comment .attachment .upload>.progress .progress-bar {
+    border-radius: 0;
+    height: 6px;
+}
+.progress .progress-bar {
+    background-color: var(--accentcolor);
+}
+
+/* Loading spinner */
+
+.spinner-wandering-cubes .spinner-item {
+    background-color: var(--accentcolor);
+}
+
 /* Switches */
 
 .horizontal-2BEEBe>.flex-lFgbSz:last-child, .horizontal-2BEEBe>.flexChild-1KGW5q:last-child {
@@ -2131,9 +2352,11 @@ g[Attributes Style] {
     border-radius: 0;
 }
 .themeDefault-3M0dJU.valueChecked-3Bzkbm {
+    background-color: var(--accentcolor);
     box-shadow: 3px 3px 1px rgba(0,0,0,.4);
 }
 .themeClear-1NqU69.valueChecked-3Bzkbm {
+    background-color: var(--accentcolor);
     box-shadow: 3px 3px 1px rgba(0,0,0,.4);
 }
 .themeDefault-3M0dJU.sizeDefault-rZbSBU {
@@ -2157,7 +2380,7 @@ g[Attributes Style] {
     width: 18px;
 }
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {
-    background: #7289da;
+    background: #404040;
 	border-radius: 0;
 }
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before {
@@ -2365,12 +2588,12 @@ g[Attributes Style] {
     background: #161616 !important;
 }
 .ui-standard-sidebar-view .bda-slist .bda-right button {
-    background: #7289da;
+    background: var(--accentcolor);
     color: #FFF;
     border-radius: 0px;
 }
 .kawaii-tag {
-    background: #7289da;
+    background: var(--accentcolor);
     color: #fff!important;
     border-radius: 0;
     box-shadow: 2px 2px 2px rgba(0,0,0,.3);
@@ -2456,7 +2679,11 @@ g[Attributes Style] {
     padding-top:5px;
     margin-bottom:-10px;
     content: var(--version);
-    color: #8247c1;
+    color: var(--accentcolor);
+}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span {
+    background-color: var(--accentcolor);
+    border-color: var(--accentcolor);
 }
 .ui-standard-sidebar-view .bda-slist li:nth-child(odd) {
     background-color: rgba(0,0,0,.2);
@@ -2477,7 +2704,7 @@ g[Attributes Style] {
     max-height: 12px;
 }
 .bd-pfbtn {
-    background: #7289da;
+    background: var(--accentcolor);
     color: #FFF;
     border-radius: 0px;
 }
@@ -2485,8 +2712,15 @@ g[Attributes Style] {
     color: #b9bbbe;
     border-radius: 0;
 }
+#bd-settings-sidebar .ui-tab-bar-item.selected {
+    color: #fff;
+    background-color: var(--accentcolor);
+}
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {
+    background: var(--accentcolor);
+}
 
-/* Better Discord Switch Fix Thanks to Zerebos */
+/* BetterDiscord Switch Fix Thanks to Zerebos */
 
 .ui-switch-wrapper {
     -webkit-user-select: none;
@@ -2522,7 +2756,7 @@ g[Attributes Style] {
     transition: background .15s ease-in-out,box-shadow .15s ease-in-out,border .15s ease-in-out;
 }
 .ui-switch-checkbox:checked+.ui-switch {
-    background: #7289da;
+    background: var(--accentcolor);
 }
 .ui-switch-wrapper .ui-switch::before {
     content: "";
