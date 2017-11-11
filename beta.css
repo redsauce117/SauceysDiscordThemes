@@ -466,6 +466,9 @@ a[href="/channels/@me"] .badge {
 .private-channels .status {
     border: 2px solid #313131;
 }
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
+    background-color: #353535;
+}
 
 /* Calling */
 
@@ -862,6 +865,13 @@ a[href="/channels/@me"] .badge {
 }
 .member-roles .manipulate:hover:not(.invert) {
     border-color: #000;
+}
+.botTag-1OwMgs {
+    border-radius: 0;
+}
+.botTagInvert-gorWR_ {
+    background: #fff;
+    color: #7289da;
 }
 
 /* Quick Switcher */
@@ -1559,6 +1569,15 @@ transition: background-color .3s ease-in-out;
     color: #fff;
 }
 
+/* Banner */
+
+.notice {
+    background-color: #f26522;
+    border-radius: 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    color: #fff;
+}
+
 /* Options Menu */
 
 .theme-dark .ui-standard-sidebar-view .content-region {
@@ -1673,6 +1692,10 @@ transition: background-color .3s ease-in-out;
 .user-settings-keybinds .ghost-pill {
     -webkit-box-flex: 0;
     background-color: rgba(250,166,26,.1);
+}
+.theme-dark .add-game-popout {
+    background-color: #2b2b2b;
+    border-radius: 0;
 }
 
 /* Audit Logs */
@@ -2038,6 +2061,16 @@ g[Attributes Style] {
 .buttonOutlined-38aLSW {
     border-radius: 0;
 }
+.channel-textarea-guard button {
+    background-color: #7289da;
+    border-radius: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 0 23px;
+    transition: background-color .2s ease;
+}
 
 /* Sliders */
 
@@ -2062,6 +2095,25 @@ g[Attributes Style] {
     margin-top: -13px;
     top: 50%;
     width: 10px;
+}
+.slider-bar {
+    background: #dbdde1;
+    border-radius: 0;
+    height: 8px;
+}
+.slider-bar-fill {
+    background: #697ec4;
+}
+.slider-handle {
+    border: none;
+    border-radius: 0;
+    cursor: ew-resize;
+    height: 24px;
+    left: 0;
+    margin-top: 2px;
+    margin-left: -12px;
+    top: -9px;
+    width: 24px;
 }
 
 /* Switches */
@@ -2162,6 +2214,28 @@ g[Attributes Style] {
 	box-shadow: 0 2px 4px 1px rgba(0,0,0,.1)!important;
 }
 .bubble-17BwqU:before {
+    display: none;
+}
+.slider-handle span {
+    border: none;
+    border-radius: 0;
+    background: #2d2d2d;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    height: 22px;
+    left: -15px;
+    line-height: 22px;
+    opacity: 0;
+    text-align: center;
+    top: -32px;
+    transition: opacity .2s ease-out;
+    width: 50px;
+}
+.slider-handle span:before {
+   display: none;
+}
+.slider-handle span:after {
     display: none;
 }
 
