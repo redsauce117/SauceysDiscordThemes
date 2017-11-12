@@ -872,7 +872,7 @@ a[href="/channels/@me"] .badge {
     color: #bbbbbb;
 }
 .member-roles .member-role {
-    background-color: transparent;
+    background-color: #131313;
     border: 1px solid #000;
     border-radius: 0px;
     color: #a8a8a8;
@@ -1286,6 +1286,27 @@ a[href="/channels/@me"] .badge {
 .theme-dark .selectorSelected-2M0IGv {
 	background-color: rgba(0,0,0, 0.2);
     border: none;
+}
+.theme-dark .contentTitle-sL6DrN {
+    color: #fff;
+}
+.theme-dark .description-YnaVYa, .theme-dark .descriptionUsername-1quCGz {
+    color: #cecece;
+}
+.theme-dark .descriptionDiscriminator-3KCIMj {
+    color: #8a8a8a;
+}
+.theme-brand .description-YnaVYa, .theme-brand .descriptionUsername-1quCGz {
+    color: #cecece;
+}
+.theme-brand .descriptionDiscriminator-3KCIMj {
+    color: #8a8a8a;
+}
+.theme-brand .content-249Pr9 {
+    color: #fff;
+}
+.theme-brand .contentTitle-sL6DrN {
+    color: #fff;
 }
 
 /* Chat pictures */
@@ -2287,6 +2308,9 @@ g[Attributes Style] {
 .button-2t3of8 {
     border-radius: 0;
 }
+.buttonGreyLink-1yOnrN {
+    color: #fff;
+}
 
 /* Checkboxes */
 
@@ -2592,7 +2616,7 @@ g[Attributes Style] {
     background: var(--accentcolor);
 }
 .member-perms .member-perm {
-    background-color: #353535;
+    background-color: #131313;
     border: 1px solid #000000;
     border-radius: 0px;
     color: #b9b9b9;
