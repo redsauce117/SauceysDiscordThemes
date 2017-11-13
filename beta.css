@@ -1477,6 +1477,33 @@ a[href="/channels/@me"] .badge {
     border-radius: 0px;
 }
 
+/* You've been invited */
+
+.invite-modal {
+    border-radius: 0;
+}
+.invite-modal .scroller {
+    background: #2b2b2b!important;
+    background-size: 200px 204px;
+    height: 100%;
+    position: relative;
+    width: 400px;
+}
+invite-modal .avatar-xxxlarge {
+    background-color: #2b2b2b;
+    border-radius: var(--avatars);
+    color: #fff;
+}
+.invite-modal .invite-title {
+    color: #fff;
+}
+.invite-modal .invite-body {
+    color: #cecece;
+}
+.invite-modal .invite-cancel {
+    color: #cecece;
+}
+
 /* Invitenotice message */
 
 .theme-dark .invite-button {
@@ -1969,6 +1996,23 @@ transition: background-color .3s ease-in-out;
     box-shadow: 0 2px 1px rgba(0,0,0,.3);
 }
 
+/* Reactions Modal */
+
+.reactionDefault-2V6kdV, .reactionSelected-rLBoT_ {
+    border-radius: 0;
+}
+.theme-dark .sidebar-32BRdp {
+    background: #2b2b2b;
+}
+.theme-dark .container-a2vS7i, .theme-dark .reactors-2PjMP0 {
+    background-color: #272727;
+}
+.theme-dark .reactionSelected-rLBoT_ {
+    background-color: rgba(0,0,0,.2);
+}
+.theme-dark .reactionDefault-2V6kdV:hover {
+    background-color: rgba(0,0,0,.1);
+}
 
 /* Delete Message Modal */
 
@@ -2304,12 +2348,22 @@ g[Attributes Style] {
     line-height: 30px;
     padding: 0 23px;
     transition: background-color .2s ease;
+    box-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
+.channel-textarea-guard button:hover {
+    background-color: var(--accentcolor);
+    border-radius: 0;
+    color: #fff;
 }
 .button-2t3of8 {
     border-radius: 0;
 }
 .buttonGreyLink-1yOnrN {
     color: #fff;
+}
+.invite-modal .button {
+    background-color: #43b581;
+    box-shadow: 0 2px 1px rgba(0,0,0,.3);
 }
 
 /* Checkboxes */
