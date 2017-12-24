@@ -8,7 +8,7 @@ Join the support server [here - Support Server](https://discord.gg/ceutp6D)
 To change how the theme looks, paste the content below into your custom CSS, and change the values to change the way the theme looks! (Read the comments on each variable to see what it does)
 
 ```CSS
-:root {
+body {
     --avatars: 10%; /* Set to "10%" if you want square pfps "50%" for round */
     --borders: 1; /* Set to "0" for round borders, "1" for square */
     --chatanim: 0; /* Change to "1" to enable a chat animation when clicking into a chat "0" to disable */
