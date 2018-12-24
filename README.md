@@ -1,4 +1,4 @@
-# DarkerDiscord by Saucey#1712
+# DarkerDiscord by Saucey#5176
 ## [Download](https://raw.githubusercontent.com/redsauce117/SauceysDiscordThemes/master/DarkerDiscordTheme.theme.css)
 
 Saucey's Dark Theme is a darker version of discord, keeping the same look, but darker elements and more squareish elements.
